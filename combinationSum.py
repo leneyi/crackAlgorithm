@@ -1,5 +1,6 @@
 def combinationSum(candidates,target):
     res = [];
+    candidates.sort();
     dfs(0,target,candidates,[],res);
     return res;
 def dfs(start,target,candidates,path,res):
